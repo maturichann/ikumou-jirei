@@ -147,10 +147,6 @@ export default async function CaseDetail({
         </div>
       </section>
 
-      <section className="gradient-bg py-12 px-4 text-center text-white">
-        <h2 className="text-xl md:text-2xl font-bold mb-4">まずは無料でご相談ください</h2>
-        <p className="text-lg font-bold">Check me</p>
-      </section>
     </div>
   );
 }

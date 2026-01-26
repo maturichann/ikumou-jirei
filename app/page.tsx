@@ -103,16 +103,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="gradient-bg py-16 px-4 text-center text-white">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">
-          まずは無料で
-          <br />
-          ご相談ください
-        </h2>
-        <div className="w-16 h-1 bg-white mx-auto mb-6"></div>
-        <p className="text-xl font-bold mb-2">Check me</p>
-      </section>
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-6 px-4 text-center">
