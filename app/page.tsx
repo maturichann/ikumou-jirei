@@ -41,7 +41,7 @@ export default function Home() {
                     {caseItem.areaImages.map((area) => (
                       <span
                         key={area.area}
-                        className="px-3 py-1 bg-[#5bb5a2]/10 text-[#5bb5a2] text-sm rounded-full"
+                        className="px-3 py-1 bg-[#d4a5a5]/10 text-[#d4a5a5] text-sm rounded-full"
                       >
                         {area.area}
                       </span>
@@ -50,7 +50,7 @@ export default function Home() {
                   <p className="text-gray-600 text-sm line-clamp-2">
                     {caseItem.reason}
                   </p>
-                  <div className="mt-3 flex items-center text-[#5bb5a2] text-sm font-medium">
+                  <div className="mt-3 flex items-center text-[#d4a5a5] text-sm font-medium">
                     詳細を見る
                     <svg
                       className="w-4 h-4 ml-1"
@@ -74,7 +74,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-12 px-4 bg-gradient-to-b from-[#e8f5f2] to-white">
+      <section className="py-12 px-4 bg-gradient-to-b from-[#f5e6e8] to-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center">
             よくある質問
@@ -86,13 +86,13 @@ export default function Home() {
                 className="bg-white rounded-xl p-6 card-shadow border border-gray-100"
               >
                 <div className="flex items-start gap-3 mb-3">
-                  <span className="flex-shrink-0 w-8 h-8 bg-[#5bb5a2] text-white rounded-full flex items-center justify-center font-bold text-sm">
+                  <span className="flex-shrink-0 w-8 h-8 bg-[#d4a5a5] text-white rounded-full flex items-center justify-center font-bold text-sm">
                     Q
                   </span>
                   <h3 className="font-bold text-gray-800 pt-1">{faq.question}</h3>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="flex-shrink-0 w-8 h-8 bg-[#e8f5f2] text-[#5bb5a2] rounded-full flex items-center justify-center font-bold text-sm">
+                  <span className="flex-shrink-0 w-8 h-8 bg-[#f5e6e8] text-[#d4a5a5] rounded-full flex items-center justify-center font-bold text-sm">
                     A
                   </span>
                   <p className="text-gray-600 pt-1 leading-relaxed">{faq.answer}</p>

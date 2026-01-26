@@ -3,9 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #5bb5a2;
-  --primary-light: #7dc9b9;
-  --primary-dark: #4a9a89;
+  --primary: #d4a5a5;
+  --primary-light: #e8c4c4;
+  --primary-dark: #c48b8b;
 }
 
 @theme inline {
@@ -25,7 +25,7 @@ body {
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, #5bb5a2 0%, #7dc9b9 50%, #a8d8ea 100%);
+  background: linear-gradient(135deg, #d4a5a5 0%, #e8c4c4 50%, #f5e6e8 100%);
 }
 
 .card-shadow {

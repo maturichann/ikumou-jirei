@@ -57,24 +57,24 @@ export default async function CaseDetail({
       <section className="py-8 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
-            <span className="w-1 h-6 bg-[#5bb5a2] mr-3 rounded-full"></span>
+            <span className="w-1 h-6 bg-[#d4a5a5] mr-3 rounded-full"></span>
             基本情報
           </h2>
           <div className="space-y-4">
-            <div className="bg-white rounded-xl p-5 card-shadow border-l-4 border-[#5bb5a2]">
-              <h3 className="font-bold text-[#5bb5a2] mb-2">来店理由</h3>
+            <div className="bg-white rounded-xl p-5 card-shadow border-l-4 border-[#d4a5a5]">
+              <h3 className="font-bold text-[#d4a5a5] mb-2">来店理由</h3>
               <p className="text-gray-700 leading-relaxed">{caseData.reason}</p>
             </div>
-            <div className="bg-white rounded-xl p-5 card-shadow border-l-4 border-[#5bb5a2]">
-              <h3 className="font-bold text-[#5bb5a2] mb-2">薄毛の特徴</h3>
+            <div className="bg-white rounded-xl p-5 card-shadow border-l-4 border-[#d4a5a5]">
+              <h3 className="font-bold text-[#d4a5a5] mb-2">薄毛の特徴</h3>
               <p className="text-gray-700 leading-relaxed">{caseData.hairCondition}</p>
             </div>
-            <div className="bg-white rounded-xl p-5 card-shadow border-l-4 border-[#5bb5a2]">
-              <h3 className="font-bold text-[#5bb5a2] mb-2">現在の施術</h3>
+            <div className="bg-white rounded-xl p-5 card-shadow border-l-4 border-[#d4a5a5]">
+              <h3 className="font-bold text-[#d4a5a5] mb-2">現在の施術</h3>
               <ul className="text-gray-700">
                 {caseData.treatment.map((t, i) => (
                   <li key={i} className="flex items-center">
-                    <span className="w-1.5 h-1.5 bg-[#5bb5a2] rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-[#d4a5a5] rounded-full mr-2"></span>
                     {t}
                   </li>
                 ))}
@@ -84,10 +84,10 @@ export default async function CaseDetail({
         </div>
       </section>
 
-      <section className="py-8 px-4 bg-gradient-to-b from-white to-[#e8f5f2]">
+      <section className="py-8 px-4 bg-gradient-to-b from-white to-[#f5e6e8]">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="w-1 h-6 bg-[#5bb5a2] mr-3 rounded-full"></span>
+            <span className="w-1 h-6 bg-[#d4a5a5] mr-3 rounded-full"></span>
             Before After
           </h2>
           {caseData.areaImages.map((areaData) => (
@@ -96,7 +96,7 @@ export default async function CaseDetail({
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {areaData.images.map((img, index) => (
                   <div key={index} className="relative">
-                    <div className="absolute top-2 left-2 bg-[#5bb5a2] text-white text-xs px-2 py-1 rounded-md font-medium z-10">{img.date}</div>
+                    <div className="absolute top-2 left-2 bg-[#d4a5a5] text-white text-xs px-2 py-1 rounded-md font-medium z-10">{img.date}</div>
                     <CaseImage src={img.path} alt={areaData.area + " " + (index + 1) + "回目"} />
                   </div>
                 ))}
@@ -109,7 +109,7 @@ export default async function CaseDetail({
       <section className="py-8 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-xl font-bold text-gray-800 mb-6 flex items-center">
-            <span className="w-1 h-6 bg-[#5bb5a2] mr-3 rounded-full"></span>
+            <span className="w-1 h-6 bg-[#d4a5a5] mr-3 rounded-full"></span>
             お客様の声
           </h2>
           <div className="space-y-4">
@@ -128,7 +128,7 @@ export default async function CaseDetail({
       <section className="py-8 px-4 bg-gray-100">
         <div className="max-w-4xl mx-auto flex justify-between">
           {caseData.id > 1 && (
-            <Link href={"/case/" + (caseData.id - 1)} className="flex items-center text-[#5bb5a2] font-medium hover:underline">
+            <Link href={"/case/" + (caseData.id - 1)} className="flex items-center text-[#d4a5a5] font-medium hover:underline">
               <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
@@ -137,7 +137,7 @@ export default async function CaseDetail({
           )}
           <div className="flex-1"></div>
           {caseData.id < cases.length && (
-            <Link href={"/case/" + (caseData.id + 1)} className="flex items-center text-[#5bb5a2] font-medium hover:underline">
+            <Link href={"/case/" + (caseData.id + 1)} className="flex items-center text-[#d4a5a5] font-medium hover:underline">
               次の事例
               <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
